@@ -1,12 +1,23 @@
+# Colcon build and install folders
 build/
 install/
 log/
 .colcon/
+
+# Python cache and temporary files
 *.pyc
 __pycache__/
+
+# Swap files
 *.swp
 *.swo
+
+# IDE/editor config files
 .vscode/
 .idea/
+
+# Python packaging
 *.egg-info/
-*.DS_Store
+
+# macOS-specific
+.DS_Store

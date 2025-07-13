@@ -20,16 +20,16 @@ This project implements an **Edge Detection Bot** using ROS 2 Jazzy. The bot is 
    git clone --recurse-submodules git@github.com:PushkarOM/ros2_jazzy_edge_detection_bot.git
    cd ros2_jazzy_edge_detection_bot
    ```
-
+Make sure you are in the root of the workspace (`ros2_jazzy_edge_detection_bot`) when running these commands.
 Build the workspace:
 ```bash
-colcon build
+colcon build --symlink-install
 ```
 
 Source the workspace:
 ```bash
 source install/setup.zsh
-#or
+#or this is you are using bash
 source install/setup.bash
 ```
 
@@ -38,7 +38,11 @@ Usage
 Launch the bot simulation with Gazebo and RViz:
 
 ```bash
+# Terminal 1
 ros2 launch bot_bringup bringup.launch.py
+
+# Terminal 2
+ros2 run bot_script edge_detection
 ```
 **Notes :**
 1) This project uses the ROS 2 Jazzy distribution.
@@ -53,4 +57,10 @@ Feel free to submit issues or pull requests to improve the bot.
 ### License
 This project is licensed under the [MIT License](LICENSE).
 
-Created by Pushkar — Inspired by a workshop mentor.
+### Credits
+
+This project is based on the original work by [Curious-Utkarsh](https://github.com/Curious-Utkarsh) in the ROS 2 Humble workshop.
+
+Original repository: [https://github.com/Curious-Utkarsh/bot_ws](https://github.com/Curious-Utkarsh/bot_ws)
+
+Created by Pushkar — Inspired by a workshop mentor [@Curious-Utkarsh](https://github.com/Curious-Utkarsh).

@@ -25,6 +25,8 @@ colcon build
 Source the workspace:
 ```bash
 source install/setup.zsh
+#or
+source install/setup.bash
 ```
 
 
@@ -43,8 +45,5 @@ Ensure your environment is properly set up with ROS 2 Jazzy before running.
 
 Contributing
 Feel free to submit issues or pull requests to improve the bot.
-
-License
-Specify your license here (e.g., MIT License).
 
 Created by Pushkar — Inspired by a workshop mentor.
